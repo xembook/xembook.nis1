@@ -225,7 +225,7 @@ $(function() {
 			$("#account_address"   ).text(account.address.substring(0,6) + "-" +account.address.substring(6,12) + "-" + account.address.substring(12,18)+"..." );
 			$("#account_balance"   ).text(account_balance + "XEM");
 			$("#account_importance").text(account_importance);
-			$("#transfers_nembex"  ).attr("href", "http://explorer.nemchina.com/#/s_account?account="  + account.address);
+			$("#transfers_nembex"  ).attr("href", "http://explorer.nemtool.com/#/s_account?account="  + account.address);
 			$("#xembook"  ).attr("href", "/?address=" + account.address);
 
 //			sendAjax(ACCOUNT_TRANSFERS + address).done(function(res){parse_transfers(res)});
@@ -566,7 +566,7 @@ $(function() {
 					$( "#transfers tbody" ).append( "<tr>" +
 						"<td>" + dispTimeStamp(tran.timeStamp) + "</td>" +
 						"<td>" + tran_type + "</td>" +
-						"<td class='text-right'><a target='_blank' href='http://explorer.nemchina.com/#/s_tx?hash=" + meta_hash + "'>" + tran_amount + "</a></td>" +
+						"<td class='text-right'><a target='_blank' href='http://explorer.nemtool.com/#/s_tx?hash=" + meta_hash + "'>" + tran_amount + "</a></td>" +
 						"<td class='text-right'>" + tran_amount_jpy + "</td>" +
 						"<td class='text-right'>" + avg_jpy + "</td>" +
 						"<td class='text-right'>" + outgoing_fee + "</td>" +

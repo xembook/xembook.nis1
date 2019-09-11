@@ -189,7 +189,7 @@ $(function() {
 					$( "#transfers tbody" ).append( "<tr>" +
 						"<td>" + dispTimeStamp(tran.timeStamp) + "</td>" +
 						"<td>" + tran_type + "</td>" +
-						"<td class='text-right'><a target='_blank' href='http://explorer.nemchina.com/#/s_tx?hash=" + meta_hash + "'>" + tran_amount + "</a></td>" +
+						"<td class='text-right'><a target='_blank' href='http://explorer.nemtool.com/#/s_tx?hash=" + meta_hash + "'>" + tran_amount + "</a></td>" +
 					"</tr>" );
 				}
 			}
@@ -336,7 +336,7 @@ $(function() {
 		$("#xemreceiver"     ).attr("href", "xemreceiver2.html?address=" + address);
 		$("#xemprice"        ).attr("href", "xemprice2.html?address=" + address);
 		$("#openapostille"   ).attr("href", "https://www.openapostille.net/owner/" + address);
-		$("#transfers_nembex").attr("href", "http://explorer.nemchina.com/#/s_account?account=" + address);
+		$("#transfers_nembex").attr("href", "http://explorer.nemtool.com/#/s_account?account=" + address);
 		$("#account_address"    ).text(
 			account.address.substring(0,6)
 			+ "-" +account.address.substring(6,12)

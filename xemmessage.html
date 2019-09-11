@@ -183,7 +183,7 @@ $(function() {
 				$("#account_address"   ).text(account.address.substring(0,6) + "-" +account.address.substring(6,12) + "-" + account.address.substring(12,18)+"..." );
 				$("#account_balance"   ).text(account_balance + "XEM");
 				$("#account_importance").text(account_importance);
-				$("#transfers_nembex"  ).attr("href", "http://explorer.nemchina.com/#/s_account?account=" + account.address);
+				$("#transfers_nembex"  ).attr("href", "http://explorer.nemtool.com/#/s_account?account=" + account.address);
 
 				$("#xemtax"  ).attr("href", "xemtax.html?address=" + account.address);
 				$("#xembook"  ).attr("href", "/?address=" + account.address);
@@ -391,7 +391,7 @@ $(function() {
 						$( "#transfers tbody" ).append( "<tr>" +
 							"<td style='white-space: nowrap'>" + dispTimeStamp(tran.timeStamp) + "</td>" +
 							"<td style='white-space: nowrap'>" + tran_type + "</td>" +
-							"<td class='text-right' style='white-space: nowrap'><a target='_blank' href='http://explorer.nemchina.com/#/s_tx?hash=" + meta_hash + "'>" + tran_amount + "</a></td>" +
+							"<td class='text-right' style='white-space: nowrap'><a target='_blank' href='http://explorer.nemtool.com/#/s_tx?hash=" + meta_hash + "'>" + tran_amount + "</a></td>" +
 							"<td style='text-align: left'>" + plain_text + "</td>" +
 						"</tr>" );
 					}
@@ -567,7 +567,7 @@ $(function() {
 			</ul>
 			<dl>
 			<dt>収支報告</dt>
-			<dd><a href="http://explorer.nemchina.com/#/s_account?account=NBZNQL-2JDWTG-UAW237-PXV4SS-XSPORY-43GUSW-GSB7" >nembexで確認</a></dd>
+			<dd><a href="http://explorer.nemtool.com/#/s_account?account=NBZNQL-2JDWTG-UAW237-PXV4SS-XSPORY-43GUSW-GSB7" >nembexで確認</a></dd>
 			<dd><a href="/?address=NBZNQL-2JDWTG-UAW237-PXV4SS-XSPORY-43GUSW-GSB7" >XEMBookで確認</a></dd>
 			</dl>
 		</div>
